@@ -1,6 +1,6 @@
 # Ascend Operator Performance Collector
 
-自动多模式采集 Ascend（昇腾）NPU 算子性能数据的 Python 脚本。
+自动多模式采集 Ascend（昇腾）FLA仓库的NPU 算子性能数据的 Python 脚本。
 
 ## 功能特色
 
@@ -16,6 +16,8 @@
 - 输出宽表 `CSV`，包含各模式下的 `Avg Time(us)` 和详细备注
 
 ## 快速开始
+
+将auto_profile_collect_v3.11.py脚本放在flash-linear-attention/tests/ops/ascend_ops/cv_operator 目录下运行
 
 ```bash
 # 全量测试所有 test_*_npu.py（自动适配 pytest / python 模式）
