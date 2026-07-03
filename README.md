@@ -74,33 +74,8 @@ python auto_profile_collect_v3.11.py --pattern "**/test_*_npu.py" --no-msprof-fa
 - Ascend NPU 驱动及 `npu-smi` 工具
 - `msprof` 命令行工具（可选，用于回退采集）
 
+## TODO
 
-
-
-git add .
-git commit -m "feat: 初始提交 - 多模式算子性能采集工具 v3.11
-
-- 支持 pytest 和 Python 脚本自动识别
-- 三种编译模式自动切换测试
-- ssbuffer 回退检测
-- msprof 自动回退采集
-- 设备自动重试与增量保存
-- 详细备注与宽表 CSV 输出"
-git push -u origin main
-```
-
-如果遇到 `main` 分支不存在，先执行：
-```bash
-git branch -M main
-git push -u origin main
-```
-
----
-
-### 7. 脚本流程概述（已写入 README，也可单独作为文档）
-
-已在 README 的 “工作流程” 章节说明，此处不再重复。
-
----
-
-完成以上步骤后，你的 GitHub 仓库即可公开分享，他人可以通过 `git clone` 获取并使用该脚本。
+- [ ] 实现抓取 SSBUFFER 回退的具体原因
+- [ ] 实现 CSV 基线比较，自动检测ttadapter变更后的性能劣化
+- [ ] 实现 CSV 后处理功能，支持筛选 ssbuffer 性能劣化的算子等分析
