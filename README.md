@@ -45,7 +45,7 @@ python auto_profile_collect_v3.11.py --pattern "**/test_*_npu.py" --no-msprof-fa
 | `--modes` | 要测试的编译模式，可多选 | `ssbuffer cvpipeline native` |
 | `--devices` | 手动指定 NPU 设备列表 | 自动从 `npu-smi info` 获取 |
 | `--skip-pytest` | 跳过所有 pytest 文件 | 否 |
-| `--no-msprof-fallback` | 禁用 msprof 自动回退 | 否（默认启用） |
+| `--no-msprof-fallback` | 禁用 msprof 采集没有性能脚本的算子 | 否（默认启用） |
 
 ## 工作流程
 
